@@ -1,29 +1,99 @@
 *{
+    font: bold 14px Arial, sans-serif;
     margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font:bold 14px Arial, sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+.top span.clear{
+    float:left;
+}
+.top .screen{
+    float: right;
+    height:40px;
+    width:212px;
+    padding: 0 12px;
+    border-radius:3px;
+    background:  rgba(0, 0, 0, 0.2);
+    box-shadow:inset 0px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size:16px;
+    color:white;
+    line-height: 40px;
+    letter spacing: 1px;
+    text-align:right;
+}
+.keys, .top{
+    overflow:hidden;
+}
+.keys span, .top span.clear{
+    float:left;
+    top:0;
+    position:relative;
+    cursor:pointer;
+    width:66px;
+    height:36px;
+    bordor-radius: 3px;
+    background:white;
+    box-shadow:0px 4px rgba(0, 0, 0, 0.4);
+    margin: 0 7px 11px 0;
+    line-height:36px;
+    text-align:center;
+    user-select:none;
+    transition: all 0.1s ease
 }
 
-html{
-    height: 100%;
-    background: white;
-    background: radial-gradient(circle, #ffffff 20%, #cccccc);
-    background-size: cover;
+.keys span.operator{
+    margin-right:0;
+    background:#FFF0F5;
+
 }
-#calculator{
-    box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0,0,0,0.3);
-    border-radius: 3px;
-    background: linear-gradient(#009de4, #8bceec);
-    background: #009dea;
-    padding: 20px 20px 9px;
-    margin: 100px auto;
-    height: auto;
+#calculator {
     width: 325px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px 20px 9px;
+    background: #404040;
+    background: linear-gradient(#404040, #484848);
+    border-radius: 3px;
+    box-shadow: 0px 4px #909090  , 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
-top{}
-clear{}
-screen{}
-keys{}
-operator{}
-equal{}
+html{
+    background: radial-gradient(circle, #fff 20%, #ccc);
+    background-size:cover;
+    height:100%;
+    background:white;
+}
+.keys span.equals{
+    box-shadow:0px 4px #9da853;
+    background: #f1ff92;
+    color:#888e5f;
+}
+.top span.clear{
+    box-shadow:0px 4px #ff7c87;
+    background: #ff9fa8;
+    color:white;
+}
+.top span:hover{
+    box-shadow:0px 4px #6b54d3;
+    background: #9c89f6;
+    color:white;
+}
+.top span.equals:hover{
+    box-shadow:0px 4px #d3545d;
+    background: #f68991;
+    color:white;
+}
+.keys span:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+
+.keys span.equals:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+.top span.clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+}
